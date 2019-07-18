@@ -1,0 +1,158 @@
+h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 5em;
+    text-shadow: 2px 2px 2px gray;
+    text-align: center;
+    /* margin-top: 50px; */
+    color: white;
+    /* background-color:#fabf2a; */
+}
+
+#h1Div{
+    background-color: #fabf2a;
+    width: 100%;
+    margin-top: 0;
+}
+ 
+body {
+  font-family: "Lato";
+  color: #fabf2a;
+  margin-top: 0;
+}
+.container {
+    display: flex;
+    max-width: 50%;
+    justify-content: center;
+    margin: 20px auto;
+    background-color:#fabf2a;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px -10px #888888;
+}
+
+#form {
+    margin: 20px auto;
+}
+
+.linkRow, .topRow, .bottomRow{
+    margin: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    align-items: center;
+    
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    border: 2px solid #fabf2a;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    font-family: 'Squada One', cursive;
+    font-size: 2em;
+    background: white;
+    color: #fabf2a;
+    
+}
+
+.input {
+  display: flex; 
+  justify-content: center;
+  background: white;
+  border: none;
+  width: 350px;
+  margin: 0px 30px;
+  font-size: 90%;
+  border-radius:5px;
+}
+
+::placeholder {
+    color: #fabf2a;
+    font-family: Lato;
+}
+
+#memeHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.square {
+  width: 70%; 
+  padding-bottom: 30%;
+  margin: 5% auto
+}
+
+#memeHolder, .memeDiv, .newMeme{
+    position: relative;
+}
+
+.memeDiv {
+    display: flex;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.newMeme {
+    max-height: auto;
+    min-height:300px;
+    max-width: 500px;
+    min-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.xImage {
+    display: none;
+    position: absolute;
+    width: 80px;
+    top: 20px;
+    right: 0;
+    z-index: 99;
+}
+
+.memeDiv:hover .xImage{
+    display: inline;
+    opacity:1;
+}
+
+.memeDiv:hover .newMeme {
+    display: inline;
+    opacity: 0.5;
+}
+
+#memeTopText, #memeBottomText {
+    position: absolute;
+    font-size: 2em;
+    font-family: impact;
+    color: white;
+    text-shadow: 
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    word-wrap: normal;
+    text-transform: uppercase;
+}
+
+#memeTopText {
+  top: 0px;
+}
+
+#memeBottomText {
+  bottom: 0px;
+}
